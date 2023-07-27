@@ -1,0 +1,63 @@
+/* Copyright (C) 2023  Semyon Hoyrish */
+/* For more details see the "LICENSE" file */
+
+- settings
+    - id
+    - user_can_register
+    - user_can_manage_team
+    - user_can_view_tasks
+    - max_members_per_team
+    - main_page_content
+    - changed_by
+
+- users
+    - id
+    - nickname
+    - email
+    - password_hash
+    - is_admin
+    - removed
+
+- sessions
+    - id
+    - user_id
+    - token
+    - expires_on
+    - cancelled
+
+- teams
+    - id
+    - name
+    - captain_id
+    - score
+    - removed
+
+- team_members
+    - id
+    - team_id
+    - user_id
+    - removed
+
+- team_invites
+    - id
+    - team_id
+    - user_id
+    - accepted
+    - declined
+    - removed
+
+- tasks
+    - id
+    - title
+    - points
+    - category
+    - description
+    - flag
+    - visible
+    - removed
+
+- solved_tasks
+    - id
+    - task_id
+    - team_id
+    - solved_at
